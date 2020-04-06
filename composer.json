@@ -1,0 +1,64 @@
+{
+    "name": "itanea/killbill-core",
+    "type": "project",
+    "description": "Bill manager for artisans",
+    "keywords": [
+        "bill",
+        "artisan"
+    ],
+    "license": "MIT",
+    "homepage": "https://itanea.fr/killbill",
+    "support": {
+        "issues": "https://github.com/itanea/killbill-core/issues",
+        "source": "https://github.com/itanea/killbill-core"
+    },
+    "authors": [
+        {
+            "name": "Fred Blanc",
+            "email": "frederic.blanc@itanea.fr"
+        }
+    ],    
+    "require": {
+        "illuminate/support": "~7.0",
+        "intervention/image": "^2.4",
+        "doctrine/dbal": "^2.10",
+        "larapack/doctrine-support": "~0.1.4",
+        "laravel/ui": "^2.0",
+        "arrilot/laravel-widgets": "^3.7",
+        "league/flysystem": "~1.0.41",
+        "larapack/voyager-hooks": "~1.2.1",
+        "ext-json": "*"        
+    },
+    "require-dev": {     
+        "phpunit/phpcov": ">=6.0",
+        "phpunit/phpunit": "^8.5",
+        "laravel/framework": "^7.0",
+        "orchestra/testbench": ">=4.0",
+        "laravel/browser-kit-testing": ">=5.0.0",
+        "orchestra/testbench-browser-kit": ">=4.0"             
+    },                                  
+    "config": {                         
+        "optimize-autoloader": true,    
+        "preferred-install": "dist",    
+        "sort-packages": true           
+    },                                  
+    "extra": {                          
+        "laravel": {                    
+            "dont-discover": []         
+        }                               
+    },   
+    "autoload": {
+        "psr-4": {
+            "itanea\\killbill\\": "src/"
+        },
+        "classmap": [
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "itanea\\killbill\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true                                                                                                        
+}
